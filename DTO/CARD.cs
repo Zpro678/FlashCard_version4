@@ -13,6 +13,7 @@ namespace DTO
         private int questionCate;
         private string question;
         private int subTopicId;
+        private string subTopicName;
         private List<ANSWER> lsanswers;
 
         public int Id { get => id; set => id = value; }
@@ -20,6 +21,7 @@ namespace DTO
         public string Question { get => question; set => question = value; }
         public int SubTopicId { get => subTopicId; set => subTopicId = value; }
         public List<ANSWER> Lsanswers { get => lsanswers; set => lsanswers = value; }
+        public string SubTopicName { get => subTopicName; set => subTopicName = value; }
 
         public CARD() { }
 

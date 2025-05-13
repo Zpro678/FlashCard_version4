@@ -28,7 +28,7 @@ namespace FlashCard_version3
             var parent = this.guna2Panel_Little.Parent;
             this.guna2Panel_Little.Dock = DockStyle.None;
             this.guna2Panel_Little.Size = parent.Size;
-            Class_BorderRadius.RoundCorners(this.guna2Panel_Little, 5);
+            Class_BorderRadius.RoundCorners(this.guna2Panel_Little, 10);
             textLabel=card.Question;
         }
         private async  Task  flipCard(Panel panel, bool isFlipped,string textLabel)

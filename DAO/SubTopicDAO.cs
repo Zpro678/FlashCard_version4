@@ -31,7 +31,7 @@ namespace DAO
             foreach(DataRow row in table.Rows)
             {
                 SUBTOPIC subTopic = new SUBTOPIC(row);
-                subTopic.Topic = TopicDAO.Instance.getTopicByID(subTopic.TopicId);
+                subTopic.TopicName = TopicDAO.Instance.getTopicNameByID(subTopic.TopicId);
                 subTopic.LsCards = CardDAO.Instance.getListCardsBySubTopicId(subTopic.Id);
                 lsSubTopic.Add(subTopic);
             }
@@ -50,7 +50,7 @@ namespace DAO
             foreach (DataRow row in table.Rows)
             {
                 SUBTOPIC subTopic = new SUBTOPIC(row);
-
+                subTopic.TopicName = TopicDAO.Instance.getTopicNameByID(subTopic.TopicId);
                 subTopic.LsCards= CardDAO.Instance.getListCardsBySubTopicId(subTopic.Id);
                 lsSubTopic.Add(subTopic);
             }
@@ -79,6 +79,20 @@ namespace DAO
             paramters.Add(subTopic.TopicId);
 
             int result = DataProvider.Instance.executeNonQuery(query, paramters);
+
+            return result;
+        }
+
+        public int addImage(SUBTOPIC subtopic)
+        {
+            string query = "UPDATE SUBTOPIC SET IMAGE_NAME = @IMAGE_NAME WHERE ID = @ID";
+
+            List<object> parameters = new List<object>();
+
+            parameters.Add(subtopic.ImageName);
+            parameters.Add(subtopic.Id);
+
+            int result = DataProvider.Instance.executeNonQuery(query, parameters);
 
             return result;
         }

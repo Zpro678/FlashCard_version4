@@ -44,6 +44,7 @@ namespace FlashCard_version3
             // 
             // guna2Button1
             // 
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(215)))), ((int)(((byte)(190)))));
             this.guna2Button1.BorderRadius = 10;
             this.guna2Button1.BorderThickness = 1;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -51,9 +52,9 @@ namespace FlashCard_version3
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(82)))), ((int)(((byte)(149)))));
             this.guna2Button1.Font = new System.Drawing.Font("Noto Serif", 10.8F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(240)))));
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(55)))), ((int)(((byte)(146)))));
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Location = new System.Drawing.Point(0, 6);
@@ -62,12 +63,13 @@ namespace FlashCard_version3
             this.guna2Button1.Size = new System.Drawing.Size(177, 31);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Thêm mới chủ đề";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // tbl_header
             // 
             this.tbl_header.ColumnCount = 3;
-            this.tbl_header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tbl_header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tbl_header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tbl_header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tbl_header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tbl_header.Controls.Add(this.layout_btn, 2, 0);
             this.tbl_header.Controls.Add(this.label1, 0, 0);
@@ -77,7 +79,6 @@ namespace FlashCard_version3
             this.tbl_header.Name = "tbl_header";
             this.tbl_header.RowCount = 1;
             this.tbl_header.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tbl_header.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.tbl_header.Size = new System.Drawing.Size(911, 49);
             this.tbl_header.TabIndex = 1;
             // 
@@ -100,11 +101,11 @@ namespace FlashCard_version3
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Noto Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Noto Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(4, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 49);
+            this.label1.Size = new System.Drawing.Size(265, 49);
             this.label1.TabIndex = 2;
             this.label1.Text = "Danh sách chủ đề";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -152,7 +153,7 @@ namespace FlashCard_version3
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "QLDSTopicControl";
             this.Size = new System.Drawing.Size(911, 495);
             this.Load += new System.EventHandler(this.QLDSChuDeControl_Load);

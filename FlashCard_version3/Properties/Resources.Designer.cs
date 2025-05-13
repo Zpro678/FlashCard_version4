@@ -63,9 +63,49 @@ namespace FlashCard_version3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_100__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-100 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_back_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-back-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_computer_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-computer-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_edit_30__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-edit-30 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_features_list_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-features-list-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +206,16 @@ namespace FlashCard_version3.Properties {
         internal static System.Drawing.Bitmap icons8_study_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-study-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_test_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-test-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -20,6 +20,8 @@ namespace FlashCard_version3
 
         private void Form_AddLittleCard_Load(object sender, EventArgs e)
         {
+            Console.WriteLine(guna2Button_TroVe.Height);
+            Console.WriteLine(guna2Button_TroVe.Width);
             if (guna2Panel_.Controls.Count <= 0)
             {
                 this.userControl_AddQuestion = new AddQuestionControl();
@@ -36,7 +38,6 @@ namespace FlashCard_version3
             {
                 listUser.Peek().Visible = false;
             }
-
             // Thêm UserControl mới vào Panel và Stack
             guna2Panel_.Controls.Add(newControl);
             listUser.Push(newControl);
@@ -70,10 +71,11 @@ namespace FlashCard_version3
                 {
                     foreach (var item2 in userQues.Controls)
                     {
-                        if (item2 is Panel panel)
+                        if (item2 is TableLayoutPanel panel)
                         {
                             foreach (var item3 in panel.Controls)
                             {
+
                                 if (item3 is Guna.UI2.WinForms.Guna2TextBox textBox && textBox.Text.Length > 0)
                                 {
                                     this.question = textBox.Text;

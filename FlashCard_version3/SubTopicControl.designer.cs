@@ -45,8 +45,8 @@ namespace FlashCard_version3
             // 
             this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(14, 197);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(13, 197);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(232, 25);
             this.label1.TabIndex = 2;
@@ -68,6 +68,7 @@ namespace FlashCard_version3
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Image = global::FlashCard_version3.Properties.Resources.icons8_flashcards_50;
             this.guna2Button1.Location = new System.Drawing.Point(84, 0);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(87, 28);
             this.guna2Button1.TabIndex = 4;
@@ -79,9 +80,11 @@ namespace FlashCard_version3
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(19, 16);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(213, 178);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 3;
             this.guna2CirclePictureBox1.TabStop = false;
             this.guna2CirclePictureBox1.UseTransparentBackground = true;
@@ -97,7 +100,8 @@ namespace FlashCard_version3
             this.guna2Button2.FillColor = System.Drawing.Color.Red;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Bold);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(84, 0);
+            this.guna2Button2.Location = new System.Drawing.Point(84, 2);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(87, 34);
             this.guna2Button2.TabIndex = 5;
@@ -113,6 +117,7 @@ namespace FlashCard_version3
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SubTopicControl";
             this.Size = new System.Drawing.Size(249, 222);
             this.Load += new System.EventHandler(this.SubTopicControl_Load);

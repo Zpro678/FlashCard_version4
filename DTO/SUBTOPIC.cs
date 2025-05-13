@@ -11,16 +11,16 @@ namespace DTO
     {
         private int id;
         private string imageName;
-        private TOPIC topic;
+        private string topicName;
         private int topicId;
         private string subtopicName;
         private List<CARD> lsCards;
         public int Id { get => id; set => id = value; }
         public string ImageName { get => imageName; set => imageName = value; }
-        public TOPIC Topic { get => topic; set => topic = value; }
         public string SubtopicName { get => subtopicName; set => subtopicName = value; }
         public int TopicId { get => topicId; set => topicId = value; }
         public List<CARD> LsCards { get => lsCards; set => lsCards = value; }
+        public string TopicName { get => topicName; set => topicName = value; }
 
         public SUBTOPIC() { }
 

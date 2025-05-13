@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
+using System.IO;
+
 namespace FlashCard_version3
 {
     public partial class SubTopicControl : UserControl
@@ -16,7 +18,7 @@ namespace FlashCard_version3
         private 
         SUBTOPIC sub = new SUBTOPIC();
         List<CARD> card;
-        string fixPath = "";
+        string fixPath = Path.Combine(Application.StartupPath, "Images");
         public SubTopicControl()
         {
             InitializeComponent();
@@ -50,7 +52,7 @@ namespace FlashCard_version3
             sub = this.Tag as SUBTOPIC;
             this.card = sub.LsCards;
             if (sub.ImageName != "")
-                guna2CirclePictureBox1.Image = Image.FromFile(fixPath + sub.ImageName);
+                guna2CirclePictureBox1.Image = Image.FromFile(fixPath + "\\" +sub.ImageName);
             else
                 guna2CirclePictureBox1.Image = null;
 
@@ -59,7 +61,7 @@ namespace FlashCard_version3
 
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
-            QLDSSubTopicControl qLDSSubTopicControl = new QLDSSubTopicControl();
+            QLDSCard qLDSSubTopicControl = new QLDSCard();
             qLDSSubTopicControl.Tag = this.sub;
             Panel parent =GetTopMostParentPanel(this);
             qLDSSubTopicControl.Size=parent.Size;

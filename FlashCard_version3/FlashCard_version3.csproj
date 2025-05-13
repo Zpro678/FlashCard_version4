@@ -85,11 +85,11 @@
     <Compile Include="QLDSTopicControl.Designer.cs">
       <DependentUpon>QLDSTopicControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="QLDSSubTopicControl.cs">
+    <Compile Include="QLDSCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="QLDSSubTopicControl.Designer.cs">
-      <DependentUpon>QLDSSubTopicControl.cs</DependentUpon>
+    <Compile Include="QLDSCard.Designer.cs">
+      <DependentUpon>QLDSCard.cs</DependentUpon>
     </Compile>
     <Compile Include="TopicControl.cs">
       <SubType>UserControl</SubType>
@@ -206,8 +206,8 @@
     <EmbeddedResource Include="QLDSTopicControl.resx">
       <DependentUpon>QLDSTopicControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QLDSSubTopicControl.resx">
-      <DependentUpon>QLDSSubTopicControl.cs</DependentUpon>
+    <EmbeddedResource Include="QLDSCard.resx">
+      <DependentUpon>QLDSCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TopicControl.resx">
       <DependentUpon>TopicControl.cs</DependentUpon>
@@ -313,6 +313,21 @@
       <Project>{cf038074-d294-4638-9d27-6f47a1486460}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-test-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-features-list-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-100 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
