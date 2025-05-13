@@ -238,7 +238,7 @@ ClientBin/
 *.jfm
 *.pfx
 *.publishsettings
-orleans.codegen.cs
+#orleans.codegen.cs
 
 # Including strong name files can present a security risk
 # (https://github.com/github/gitignore/pull/2483#issue-259490424)
@@ -327,10 +327,6 @@ __pycache__/
 *.jmconfig
 
 # BizTalk build output
-*.btp.cs
-*.btm.cs
-*.odx.cs
-*.xsd.cs
 
 # OpenCover UI analysis results
 OpenCover/

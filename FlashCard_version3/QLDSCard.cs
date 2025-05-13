@@ -26,7 +26,6 @@ namespace FlashCard_version3
 
         private void QLDSSubTopicControl_Load(object sender, EventArgs e)
         {
-            Console.WriteLine("flowlayout heigh: " + flowLayoutPanel1.Height + ", flow layout width: " + flowLayoutPanel1.Width);
             subTopic = this.Tag as SUBTOPIC;
             label2.Text = subTopic.TopicName;
             label3.Text = subTopic.SubtopicName;
@@ -35,11 +34,10 @@ namespace FlashCard_version3
             list_cards = subTopic.LsCards;
             guna2Button1.Text = list_cards.Count.ToString();
             foreach (DTO.CARD card in list_cards)
-            { 
-                BackCardControl backCardControl = new BackCardControl();
-                CARD cARD = card;
-                backCardControl.Tag = cARD;
-                flowLayoutPanel1.Controls.Add(backCardControl);
+            {
+                BackCardControl backCard = new BackCardControl();
+                backCard.Tag = card;
+                flowLayoutPanel1.Controls.Add(backCard);
             }
 
         }
@@ -66,6 +64,12 @@ namespace FlashCard_version3
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             fTrangChu.GoBack();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            fAddCard form_AddLittleCard = new fAddCard();
+            form_AddLittleCard.ShowDialog();
         }
     }
 }

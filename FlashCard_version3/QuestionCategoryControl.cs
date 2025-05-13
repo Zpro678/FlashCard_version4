@@ -19,7 +19,7 @@ namespace FlashCard_version3
 
         private void guna2Button_tracNghiem_Click(object sender, EventArgs e)
         {
-            AddMuiltipleChoiceControl userControlAddTracNghiem=new AddMuiltipleChoiceControl();
+            AddMuiltipleChoiceControl userControlAddTracNghiem = new AddMuiltipleChoiceControl();
             fAddCard.AddNewUserControl(userControlAddTracNghiem);
         }
 
