@@ -36,7 +36,6 @@ namespace DAO
             foreach(DataRow row in table.Rows)
             {
                 ANSWER answer = new ANSWER(row);
-                answer.Card = CardDAO.Instance.getCardByID(answer.CardId);
                 lsAnswers.Add(answer);
             }
             return lsAnswers;

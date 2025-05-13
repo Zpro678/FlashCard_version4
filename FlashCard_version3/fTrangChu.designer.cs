@@ -65,8 +65,8 @@ namespace FlashCard_version3
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1139, 581);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(854, 472);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // guna2Panel2
@@ -78,12 +78,12 @@ namespace FlashCard_version3
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1139, 87);
+            this.guna2Panel2.Size = new System.Drawing.Size(854, 70);
             this.guna2Panel2.TabIndex = 1;
             // 
             // tableLayoutPanel5
             // 
-            this.tableLayoutPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(55)))), ((int)(((byte)(146)))));
+            this.tableLayoutPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(80)))), ((int)(((byte)(119)))));
             this.tableLayoutPanel5.ColumnCount = 7;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.263158F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.210526F));
@@ -97,40 +97,39 @@ namespace FlashCard_version3
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel2, 5, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 3;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1139, 87);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(854, 70);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::FlashCard_version3.Properties.Resources.icons8_study_64;
-            this.pictureBox1.Location = new System.Drawing.Point(59, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 7);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 52);
+            this.pictureBox1.Size = new System.Drawing.Size(35, 56);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(55)))), ((int)(((byte)(146)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(80)))), ((int)(((byte)(119)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(133, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Noto Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(244)))), ((int)(((byte)(240)))));
+            this.label1.Location = new System.Drawing.Point(99, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 52);
+            this.label1.Size = new System.Drawing.Size(119, 56);
             this.label1.TabIndex = 1;
             this.label1.Text = "CustomCards";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tableLayoutPanel2
@@ -141,24 +140,24 @@ namespace FlashCard_version3
             this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.guna2TextBox1, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(775, 17);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(580, 7);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(299, 52);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(224, 56);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::FlashCard_version3.Properties.Resources.icons8_search_50__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(239, 7);
+            this.pictureBox2.Location = new System.Drawing.Point(179, 14);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 36);
+            this.pictureBox2.Size = new System.Drawing.Size(45, 28);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -167,9 +166,9 @@ namespace FlashCard_version3
             // 
             this.guna2TextBox1.Animated = true;
             this.guna2TextBox1.AutoRoundedCorners = true;
-            this.guna2TextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(55)))), ((int)(((byte)(146)))));
+            this.guna2TextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(80)))), ((int)(((byte)(119)))));
             this.guna2TextBox1.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox1.BorderRadius = 17;
+            this.guna2TextBox1.BorderRadius = 13;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -178,42 +177,45 @@ namespace FlashCard_version3
             this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.guna2TextBox1.Font = new System.Drawing.Font("Noto Serif", 12F);
             this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(0, 7);
+            this.guna2TextBox1.Location = new System.Drawing.Point(0, 14);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(0);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.guna2TextBox1.PlaceholderText = "Tên chủ đề";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(239, 36);
+            this.guna2TextBox1.Size = new System.Drawing.Size(179, 28);
             this.guna2TextBox1.TabIndex = 1;
             this.guna2TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gunaPan_container
             // 
             gunaPan_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            gunaPan_container.Location = new System.Drawing.Point(113, 87);
+            gunaPan_container.Location = new System.Drawing.Point(85, 70);
             gunaPan_container.Margin = new System.Windows.Forms.Padding(0);
             gunaPan_container.Name = "gunaPan_container";
-            gunaPan_container.Size = new System.Drawing.Size(911, 494);
+            gunaPan_container.Size = new System.Drawing.Size(683, 402);
             gunaPan_container.TabIndex = 2;
-            gunaPan_container.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPan_container_Paint);
+            gunaPan_container.Paint += new System.Windows.Forms.PaintEventHandler(gunaPan_container_Paint);
             // 
             // guna2Button_TroVe
             // 
+            guna2Button_TroVe.BorderRadius = 10;
             guna2Button_TroVe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             guna2Button_TroVe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             guna2Button_TroVe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             guna2Button_TroVe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            guna2Button_TroVe.Dock = System.Windows.Forms.DockStyle.Top;
             guna2Button_TroVe.Font = new System.Drawing.Font("Segoe UI", 9F);
             guna2Button_TroVe.ForeColor = System.Drawing.Color.White;
-            guna2Button_TroVe.Location = new System.Drawing.Point(3, 90);
+            guna2Button_TroVe.Location = new System.Drawing.Point(2, 72);
+            guna2Button_TroVe.Margin = new System.Windows.Forms.Padding(2);
             guna2Button_TroVe.Name = "guna2Button_TroVe";
-            guna2Button_TroVe.Size = new System.Drawing.Size(107, 45);
+            guna2Button_TroVe.Size = new System.Drawing.Size(81, 37);
             guna2Button_TroVe.TabIndex = 3;
-            guna2Button_TroVe.Text = "<";
+            guna2Button_TroVe.Visible = false;
             guna2Button_TroVe.Click += new System.EventHandler(guna2Button1_Click);
             // 
             // guna2HtmlLabel1
@@ -232,12 +234,13 @@ namespace FlashCard_version3
             // 
             // fTrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1139, 581);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(854, 472);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.HelpButton = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "fTrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

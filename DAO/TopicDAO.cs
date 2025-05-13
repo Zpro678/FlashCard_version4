@@ -50,6 +50,17 @@ namespace DAO
             return topic;
         }
 
+        public string getTopicNameByID(int id)
+        {
+            string query = "SELECT TOPIC_NAME FROM TOPIC WHERE ID = @ID";
+
+            List<object> parameters = new List<object>();
+            parameters.Add(id);
+
+            DataTable table = DataProvider.Instance.executeReader(query, parameters);
+
+            return table.Rows[0]["TOPIC_NAME"].ToString();
+        }    
         public int addTopic(TOPIC topic)
         {
             string query = "INSERT INTO TOPIC (IMAGE_NAME, TOPIC_NAME) "

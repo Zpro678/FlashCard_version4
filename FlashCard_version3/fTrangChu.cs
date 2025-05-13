@@ -26,8 +26,8 @@ namespace FlashCard_version3
             List_UserControls.Push(newControl);
             newControl.Dock = DockStyle.Fill;
             newControl.Visible = true;
-            guna2Button_TroVe.Visible = List_UserControls.Count > 1;
-            //guna2Button_TroVe.Visible = flase;
+            //guna2Button_TroVe.Visible = List_UserControls.Count > 1;
+            //guna2Button_TroVe.Visible = false;
         }
         public fTrangChu()
         {
@@ -35,6 +35,7 @@ namespace FlashCard_version3
             WindowState = FormWindowState.Maximized;
             Bounds = Screen.PrimaryScreen.Bounds;
             //guna2Button_TroVe.Visible = false;
+            //guna2Button_TroVe.Visible = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -63,7 +64,7 @@ namespace FlashCard_version3
                 UserControl previous = List_UserControls.Peek();
                 previous.Visible = true;
             }
-            guna2Button_TroVe.Visible = List_UserControls.Count > 1;
+            //guna2Button_TroVe.Visible = List_UserControls.Count > 1;
         }
 
         private void label1_Click(object sender, EventArgs e)

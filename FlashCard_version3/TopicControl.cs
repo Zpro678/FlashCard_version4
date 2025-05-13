@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
 using DTO;
 namespace FlashCard_version3
 {
@@ -16,7 +18,7 @@ namespace FlashCard_version3
         public event EventHandler SuKienTroVeCuaSubTopic;
 
         TOPIC t = new TOPIC();
-        string fixPath = ""; 
+        string fixPath = Path.Combine(Application.StartupPath, "Images");
         public TopicControl()
         {
             InitializeComponent();
@@ -55,15 +57,37 @@ namespace FlashCard_version3
         }
         private void TopicControl_Load(object sender, EventArgs e)
         {
-            t = (TOPIC) this.Tag;
-            pB_topicImage.Image = null;
+            t = (TOPIC)this.Tag;
+            if (t.ImageName != "")
+            {
+                pB_topicImage.Image = Image.FromFile(fixPath + "//" + t.ImageName);
+            }
+            else
+                pB_topicImage.Image = null;
             label1.Text = t.TopicName;
+            lbl_topics.Text = t.LsTopic.Count().ToString();
+            lbl_notes.Text = "0";
         }
 
         private void pB_topicImage_Click(object sender, EventArgs e)
         {
-            SuKienClickpicturebox3?.Invoke(this, t.Id);
-            Console.WriteLine(Application.StartupPath);
+            //SuKienClickpicturebox3?.Invoke(this, t.Id);
+            //Console.WriteLine(Application.StartupPath);
+            OpenFileDialog openfile = new OpenFileDialog();
+            if (openfile.ShowDialog() == DialogResult.OK)
+            {
+                string imageName = Path.GetFileName(openfile.FileName);
+                t.ImageName = imageName;
+                pB_topicImage.Image = Image.FromFile(openfile.FileName);
+
+                if (!Directory.Exists(fixPath))
+                {
+                    Directory.CreateDirectory(fixPath);
+                }
+                if(!File.Exists(fixPath + "\\" + imageName))
+                    File.Copy(openfile.FileName, fixPath + "\\" + imageName, true);
+                TopicBUS.Instance.addImage(t);
+            }
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

@@ -19,6 +19,8 @@ namespace FlashCard_version3
         public event EventHandler SuKienTroVe;
         public int IdTopic;
 
+        private string fixPath = Path.Combine(Application.StartupPath, "Images");
+
         private bool checkIsbtnxoa = true;
         TOPIC t = new TOPIC();
         List<SUBTOPIC> subTopics = new List<SUBTOPIC>();
@@ -55,9 +57,7 @@ namespace FlashCard_version3
         private void LoadDanhSach()
         {
 
-
             BUS.TopicBUS topicBUS = new BUS.TopicBUS();
-
 
             List<DTO.TOPIC> listTopic = new List<DTO.TOPIC>();
 
@@ -110,7 +110,10 @@ namespace FlashCard_version3
         {
             t = this.Tag as TOPIC;
             this.IdTopic = t.Id;
+            label3.Text = t.TopicName;
+            guna2PictureBox1.Image = Image.FromFile(fixPath + "\\" + t.ImageName);
             subTopics = t.LsTopic;
+            guna2Button1.Text = t.LsTopic.Count().ToString();
             if (subTopics != null)
             {
                 foreach (SUBTOPIC sub in subTopics)
@@ -124,6 +127,16 @@ namespace FlashCard_version3
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click_1(object sender, EventArgs e)
+        {
+            fTrangChu.GoBack();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

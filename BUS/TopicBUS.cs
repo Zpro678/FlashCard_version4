@@ -34,5 +34,18 @@ namespace BUS
 
             }
         }
+
+        public int addImage(TOPIC topic)
+        {
+            try
+            {
+                return TopicDAO.Instance.addPicture(topic);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return 0;
+            }
+        }
     }
 }

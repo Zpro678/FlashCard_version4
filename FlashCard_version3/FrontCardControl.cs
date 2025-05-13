@@ -19,7 +19,7 @@ namespace FlashCard_version3
 
         private void guna2Panel1_Click(object sender, EventArgs e)
         {
-            QLDSSubTopicControl qLDSTheControl = new QLDSSubTopicControl();
+            QLDSCard qLDSTheControl = new QLDSCard();
             Panel item = GetTopMostParentPanel(this);
             qLDSTheControl.Size=item.Size;
             //TrangChu.AddNewUserControl(qLDSTheControl);

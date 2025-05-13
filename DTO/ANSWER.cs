@@ -13,12 +13,10 @@ namespace DTO
         private int answerId;
         private string answerText;
         private bool isTrue;
-        private CARD card;
         public int CardId { get => cardId; set => cardId = value; }
         public int AnswerId { get => answerId; set => answerId = value; }
         public string AnswerText { get => answerText; set => answerText = value; }
         public bool IsTrue { get => isTrue; set => isTrue = value; }
-        public CARD Card { get => card; set => card = value; }
 
         public ANSWER() { }
 
