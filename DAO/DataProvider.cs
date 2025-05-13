@@ -10,7 +10,7 @@ namespace DAO
 {
     public class DataProvider
     {
-        string connectionStr = @"Data Source=DESKTOP-J2PLBJG;Initial Catalog=QLYFLASHCARD;Integrated Security=True";
+        string connectionStr = @"Data Source=MSI;Initial Catalog=QLYFLASHCARD;Integrated Security=True;";
         
         private static DataProvider instance;
 
@@ -110,7 +110,14 @@ namespace DAO
                         }
                     }
                 }
-                result = command.ExecuteNonQuery();
+                try
+                {
+                    result = command.ExecuteNonQuery();
+                }
+                catch(SqlException ex)
+                {
+                    Console.WriteLine(ex.Message.ToString() + "");
+                }
 
                 connection.Close();
             }

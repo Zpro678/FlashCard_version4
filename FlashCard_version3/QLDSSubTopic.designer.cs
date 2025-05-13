@@ -70,12 +70,12 @@ namespace FlashCard_version3
             this.tableLayoutPanel2.Controls.Add(this.guna2PictureBox1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(127, 15);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(170, 18);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(582, 101);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(775, 125);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // guna2PictureBox1
@@ -83,10 +83,10 @@ namespace FlashCard_version3
             this.guna2PictureBox1.BorderRadius = 20;
             this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(89, 2);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(119, 2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(112, 97);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(149, 121);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -102,14 +102,14 @@ namespace FlashCard_version3
             this.tableLayoutPanel3.Controls.Add(this.label2, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 1, 2);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(205, 2);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(274, 2);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.55704F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.25504F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.18792F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(375, 97);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(498, 121);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // label3
@@ -119,10 +119,9 @@ namespace FlashCard_version3
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Noto Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(13, 32);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(17, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(360, 37);
+            this.label3.Size = new System.Drawing.Size(478, 46);
             this.label3.TabIndex = 4;
             this.label3.Text = "Add a Deck";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -134,10 +133,9 @@ namespace FlashCard_version3
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Noto Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(13, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(17, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(360, 32);
+            this.label2.Size = new System.Drawing.Size(478, 40);
             this.label2.TabIndex = 2;
             this.label2.Text = "Danh sách chủ đề con";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -148,12 +146,12 @@ namespace FlashCard_version3
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.38365F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.61636F));
             this.tableLayoutPanel4.Controls.Add(this.guna2Button1, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(13, 71);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(17, 88);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(238, 23);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(317, 28);
             this.tableLayoutPanel4.TabIndex = 5;
             // 
             // guna2Button1
@@ -168,12 +166,12 @@ namespace FlashCard_version3
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Image = global::FlashCard_version3.Properties.Resources.icons8_flashcards_20;
-            this.guna2Button1.Location = new System.Drawing.Point(2, 2);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button1.Location = new System.Drawing.Point(3, 2);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedColor = System.Drawing.Color.Transparent;
             this.guna2Button1.PressedDepth = 0;
-            this.guna2Button1.Size = new System.Drawing.Size(43, 18);
+            this.guna2Button1.Size = new System.Drawing.Size(57, 22);
             this.guna2Button1.TabIndex = 4;
             this.guna2Button1.Text = "0";
             // 
@@ -185,14 +183,15 @@ namespace FlashCard_version3
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.SetColumnSpan(this.flowLayoutPanel1, 5);
             this.flowLayoutPanel1.Controls.Add(this.guna2Panel1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 133);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 163);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(834, 303);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1111, 374);
             this.flowLayoutPanel1.TabIndex = 1;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -200,10 +199,10 @@ namespace FlashCard_version3
             // 
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.guna2CircleButton1);
-            this.guna2Panel1.Location = new System.Drawing.Point(2, 2);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel1.Location = new System.Drawing.Point(3, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(187, 180);
+            this.guna2Panel1.Size = new System.Drawing.Size(249, 222);
             this.guna2Panel1.TabIndex = 1;
             // 
             // label1
@@ -211,10 +210,10 @@ namespace FlashCard_version3
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Noto Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(17, 156);
-            this.label1.Margin = new System.Windows.Forms.Padding(2);
+            this.label1.Location = new System.Drawing.Point(23, 192);
+            this.label1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 22);
+            this.label1.Size = new System.Drawing.Size(184, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Thêm Chủ đề con";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -231,11 +230,11 @@ namespace FlashCard_version3
             this.guna2CircleButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(66)))), ((int)(((byte)(114)))));
             this.guna2CircleButton1.Font = new System.Drawing.Font("Times New Roman", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(21, 2);
-            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(28, 2);
+            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(145, 145);
+            this.guna2CircleButton1.Size = new System.Drawing.Size(193, 178);
             this.guna2CircleButton1.TabIndex = 0;
             this.guna2CircleButton1.Text = "+";
             this.guna2CircleButton1.TextFormatNoPrefix = true;
@@ -253,10 +252,10 @@ namespace FlashCard_version3
             this.guna2Button3.Font = new System.Drawing.Font("Noto Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.Image = global::FlashCard_version3.Properties.Resources.icons8_back_30;
-            this.guna2Button3.Location = new System.Drawing.Point(2, 17);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button3.Location = new System.Drawing.Point(3, 20);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(92, 26);
+            this.guna2Button3.Size = new System.Drawing.Size(122, 33);
             this.guna2Button3.TabIndex = 4;
             this.guna2Button3.Text = "Trở về";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click_1);
@@ -273,10 +272,10 @@ namespace FlashCard_version3
             this.guna2Button2.Font = new System.Drawing.Font("Noto Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Image = global::FlashCard_version3.Properties.Resources.icons8_edit_30__1_;
-            this.guna2Button2.Location = new System.Drawing.Point(2, 17);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button2.Location = new System.Drawing.Point(3, 20);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(94, 26);
+            this.guna2Button2.Size = new System.Drawing.Size(124, 33);
             this.guna2Button2.TabIndex = 3;
             this.guna2Button2.Text = "Chỉnh sửa";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -296,14 +295,14 @@ namespace FlashCard_version3
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(838, 438);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1117, 539);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel5
@@ -312,14 +311,14 @@ namespace FlashCard_version3
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Controls.Add(this.guna2Button3, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 15);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 3;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(96, 101);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(128, 125);
             this.tableLayoutPanel5.TabIndex = 5;
             // 
             // tableLayoutPanel6
@@ -329,25 +328,25 @@ namespace FlashCard_version3
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.Controls.Add(this.guna2Button2, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(738, 15);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(984, 18);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(98, 101);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(130, 125);
             this.tableLayoutPanel6.TabIndex = 6;
             // 
             // QLDSSubTopic
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "QLDSSubTopic";
-            this.Size = new System.Drawing.Size(838, 438);
+            this.Size = new System.Drawing.Size(1117, 539);
             this.Load += new System.EventHandler(this.QLDSSubTopic_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

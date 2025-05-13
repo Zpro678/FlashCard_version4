@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddChuDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddChuDe.Designer.cs">
+      <DependentUpon>AddChuDe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class_BoderRadiuscs.cs" />
     <Compile Include="fAddCard.cs">
       <SubType>Form</SubType>
@@ -181,6 +187,9 @@
     <Compile Include="QuizzControl.Designer.cs">
       <DependentUpon>QuizzControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddChuDe.resx">
+      <DependentUpon>AddChuDe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fAddCard.resx">
       <DependentUpon>fAddCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +337,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-add-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\hinh_nen_thien_nhien_%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\e06af8552f5fe538003c22e223ef004e_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\8O4OT_6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Greeting card, say something, note, catatan.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

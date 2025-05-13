@@ -51,5 +51,35 @@ namespace FlashCard_version3
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            AddChuDe addChuDe = new AddChuDe();
+            addChuDe.StartPosition = FormStartPosition.CenterParent;
+            addChuDe.ShowDialog();
+            if (addChuDe.DialogResult == DialogResult.OK)
+            {
+                LoadDanhSachTopic();
+            }    
+        }
+
+        private void LoadDanhSachTopic()
+        {
+            flowLayoutPanel1.Controls.Clear();
+            TopicBUS topicBUS = new TopicBUS();
+            List<TOPIC> topicList = new List<TOPIC>();
+
+            topicList = topicBUS.getListTopic();
+
+            foreach (TOPIC topic in topicList)
+            {
+                TopicControl topiccontrol = new TopicControl();
+                topiccontrol.Tag = topic;
+                topiccontrol.SuKienClickpicturebox3 += Topic_SuKienClickpicturebox3;
+                topiccontrol.SuKienTroVeCuaSubTopic += Topic_SukienTroveSubtopic;
+                flowLayoutPanel1.Controls.Add(topiccontrol);
+            }
+
+        }
     }
 }

@@ -71,7 +71,7 @@ namespace DAO
         }
         public int addSubTopic(SUBTOPIC subTopic)
         {
-            string query = "INSERT INTO SUBTOPIC (IMAGE_NAME, TOPIC_NAME, TOPIC_ID) VALUES (@IMAGE_NAME, @TOPIC_NAME, @TOPIC_ID)";
+            string query = "INSERT INTO SUBTOPIC (IMAGE_NAME, SUBTOPIC_NAME, TOPIC_ID) VALUES (@IMAGE_NAME, @SUBTOPIC_NAME, @TOPIC_ID)";
 
             List<Object> paramters = new List<object>();
             paramters.Add(subTopic.ImageName);

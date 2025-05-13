@@ -39,6 +39,7 @@ namespace FlashCard_version3
             if (formAddaDeck.DialogResult == DialogResult.OK)
             {
                 MessageBox.Show("Đã thêm thành công");
+
                 for (int i = flowLayoutPanel1.Controls.Count - 1; i >= 0; i--)
                 {
                     Control control = flowLayoutPanel1.Controls[i];
@@ -47,7 +48,9 @@ namespace FlashCard_version3
                         flowLayoutPanel1.Controls.RemoveAt(i);
                     }
                 }
+
                 LoadDanhSach();
+
             }
 
             
@@ -57,27 +60,31 @@ namespace FlashCard_version3
         private void LoadDanhSach()
         {
 
-            BUS.TopicBUS topicBUS = new BUS.TopicBUS();
+            BUS.SubTopicBUS subTopicBUS = new BUS.SubTopicBUS();
 
-            List<DTO.TOPIC> listTopic = new List<DTO.TOPIC>();
+            List<DTO.SUBTOPIC> listTopic = new List<DTO.SUBTOPIC>();
 
-            listTopic = topicBUS.getListTopic();
+            listTopic = subTopicBUS.getListSubTopicByTopicID(this.IdTopic);
 
-           
-            if (listTopic!=null)
+
+            if (listTopic != null)
             {
-                foreach (DTO.TOPIC topic in listTopic)
+                foreach (DTO.SUBTOPIC sUBTOPIC in listTopic)
                 {
                     SubTopicControl ucCauHoi = new SubTopicControl();
-                    ucCauHoi.Dock = DockStyle.Fill;
-                    string path = Path.Combine(Application.StartupPath, "Images", topic.ImageName.ToString());
-
+                  // ucCauHoi.Dock = DockStyle.Fill;
+                    string path = Path.Combine(Application.StartupPath, "Images", sUBTOPIC.ImageName.ToString());
+                    ucCauHoi.Tag = sUBTOPIC;
                     ucCauHoi.LoadImage(path);
-                    ucCauHoi.Namelabel = topic.TopicName.ToString();
+                    
+
+
+                    ucCauHoi.Tag = sUBTOPIC;
                     ucCauHoi.isbtnxoa = this.checkIsbtnxoa;
                     flowLayoutPanel1.Controls.Add(ucCauHoi);
+
                 }
-            }   
+            }
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -111,7 +118,12 @@ namespace FlashCard_version3
             t = this.Tag as TOPIC;
             this.IdTopic = t.Id;
             label3.Text = t.TopicName;
-            guna2PictureBox1.Image = Image.FromFile(fixPath + "\\" + t.ImageName);
+            if (t.ImageName == "")
+            {
+                guna2PictureBox1.Image = Image.FromFile(fixPath + "\\" + "2.jpg");
+            }
+            else
+                guna2PictureBox1.Image = Image.FromFile(fixPath + "\\" + t.ImageName);
             subTopics = t.LsTopic;
             guna2Button1.Text = t.LsTopic.Count().ToString();
             if (subTopics != null)

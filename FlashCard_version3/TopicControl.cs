@@ -99,5 +99,10 @@ namespace FlashCard_version3
         {
             tableLayoutPanel1_Click(sender, e);
         }
+
+        private void lbl_topics_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

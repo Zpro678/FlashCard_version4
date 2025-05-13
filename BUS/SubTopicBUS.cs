@@ -32,5 +32,31 @@ namespace BUS
                 return 0;
             }
         }
+
+        public int AddSubTopic(SUBTOPIC subTopic)
+        {
+            try
+            {
+                return SubTopicDAO.Instance.addSubTopic(subTopic);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return 0;
+            }
+        }
+
+        public List<SUBTOPIC> getListSubTopicByTopicID(int ID)
+        {
+            try
+            {
+                return SubTopicDAO.Instance.getListSubTopicByTopicID(ID);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
     }
 }

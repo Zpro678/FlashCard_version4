@@ -1,5 +1,6 @@
 ﻿using BUS;
 using DTO;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,30 +14,26 @@ using System.Windows.Forms;
 
 namespace FlashCard_version3
 {
-    public partial class AddSubTopic : Form
+    public partial class AddChuDe : Form
     {
-
-        public event EventHandler<DialogResult> Accepted;
-
-        private int IDtopic;
-        public AddSubTopic(int id)
+        public AddChuDe()
         {
             InitializeComponent();
-            this.IDtopic = id;
         }
 
-        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
-
+            loadImage();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void AddChuDe_Load(object sender, EventArgs e)
         {
 
         }
 
         private string NameImage = "";
         private string PathImage = "";
+
         private void loadImage()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog()
@@ -50,16 +47,10 @@ namespace FlashCard_version3
             {
                 string filePath = openFileDialog.FileName;
                 this.PathImage = filePath;
-                NameImage =Path.GetFileName( openFileDialog.FileName);
-                guna2CirclePictureBox1.Image = Image.FromFile(filePath);
-                guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                NameImage = Path.GetFileName(openFileDialog.FileName);
+                picture_TMCD.Image = Image.FromFile(filePath);
+                picture_TMCD.SizeMode = PictureBoxSizeMode.StretchImage;
             }
-        }
-            
-        
-        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
-        {
-            loadImage();
         }
 
         private void SaveImage(string path)
@@ -74,51 +65,55 @@ namespace FlashCard_version3
 
             try
             {
-                
+
                 if (!Directory.Exists(folderPath))
                 {
                     Directory.CreateDirectory(folderPath);
                 }
 
                 string name = Path.GetFileNameWithoutExtension(this.NameImage);
-              
+
 
                 string destinationPath = Path.Combine(folderPath, $"{name}.jpg");
 
                 int count = 1;
                 string newDestinationPath = destinationPath;
 
-                
-                while (File.Exists(newDestinationPath))
+
+               if (!(File.Exists(newDestinationPath)))
                 {
-                    newDestinationPath = Path.Combine(folderPath, $"{name}_{count}.jpg");
-                    count++;
+
+                    File.Copy(path, newDestinationPath);
                 }
 
-                
-                File.Copy(path, newDestinationPath);
 
-                
+
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi khi lưu ảnh: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btnAddChuDe_Click(object sender, EventArgs e)
         {
-            
-            SUBTOPIC sUBTOPIC = new SUBTOPIC();
-            sUBTOPIC.ImageName = NameImage;
-            sUBTOPIC.SubtopicName = guna2TextBox1.Text;
-            sUBTOPIC.TopicId = this.IDtopic;
-            SubTopicBUS subTopicBUS = new SubTopicBUS();    
-
+            TOPIC tOPIC = new TOPIC();
+            tOPIC.TopicName = txtThemMoiChuDe.Text;
+            tOPIC.ImageName = this.NameImage;
 
             SaveImage(this.PathImage);
 
-            subTopicBUS.AddSubTopic(sUBTOPIC);
+            TopicBUS topicBUS = new TopicBUS();
 
+            if (topicBUS.AddTopic(tOPIC)!=0)
+            {
+                MessageBox.Show("Thêm chủ đề thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Thêm chủ đề thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
             this.DialogResult = DialogResult.OK;
             this.Close();

@@ -27,7 +27,13 @@ namespace FlashCard_version3
 
         public void LoadImage(string path)
         {
-            guna2CirclePictureBox1.Image = Image.FromFile(path);
+            if(!(File.Exists(path)))
+            {
+                guna2CirclePictureBox1.Image = null;
+                return;
+            }
+            else
+                guna2CirclePictureBox1.Image = Image.FromFile(path);
             guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
@@ -50,7 +56,7 @@ namespace FlashCard_version3
         private void SubTopicControl_Load(object sender, EventArgs e)
         {
             sub = this.Tag as SUBTOPIC;
-            this.card = sub.LsCards;
+            this.card= sub.LsCards;
             if (sub.ImageName != "")
                 guna2CirclePictureBox1.Image = Image.FromFile(fixPath + "\\" +sub.ImageName);
             else

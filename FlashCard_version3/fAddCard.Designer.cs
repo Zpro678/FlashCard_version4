@@ -1,4 +1,6 @@
-﻿namespace FlashCard_version3
+﻿using Guna.UI2.WinForms;
+
+namespace FlashCard_version3
 {
     partial class fAddCard
     {
